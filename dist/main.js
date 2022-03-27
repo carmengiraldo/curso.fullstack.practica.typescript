@@ -1,8 +1,8 @@
-import { Direccion } from './Direccion.js';
-import { Directorio } from './Directorio.js';
-import { Mail } from './Mail.js';
-import { Persona } from './Persona.js';
-import { Telefono } from './Telefono.js';
+import { Direccion } from './Direccion';
+import { Directorio } from './Directorio';
+import { Mail } from './Mail';
+import { Persona } from './Persona';
+import { Telefono } from './Telefono';
 // Declarar Direcciones
 const direccion1 = new Direccion('calle cangrejal', 11, 252, 'A', '47001', 'Magdalena', 'Santa Marta');
 const direccion2 = new Direccion('calle del pozo', 18, 117, 'B', '47001', 'Magdalena', 'Santa Marta');

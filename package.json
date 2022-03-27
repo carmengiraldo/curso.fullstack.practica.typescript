@@ -2,15 +2,19 @@
   "name": "practica-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/main.js",
   "scripts": {
-    "build": "tsc -t esnext ./src/main.ts -outDir ./build",
-    "start": "http-server -p 8000 ./build"
+    "build": "npm run clean && tsc -t esnext ./src/main.ts -outDir ./dist && npm run bundle",
+    "bundle": "rollup dist/main.js --file dist/main.umd.js --format umd --name practicaTypescript",
+    "clean": "rimraf dist/*",
+    "start": "http-server -p 8000 ./"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "http-server": "13.0.2",
-    "typescript": "^4.6.2"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.1",
+    "typescript": "^4.6.3"
   }
 }
