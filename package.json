@@ -1,0 +1,16 @@
+{
+  "name": "practica-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -t esnext ./src/main.ts -outDir ./build",
+    "start": "http-server -p 8000 ./build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "13.0.2",
+    "typescript": "^4.6.2"
+  }
+}
